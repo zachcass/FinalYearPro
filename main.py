@@ -9,7 +9,7 @@ from io import BytesIO
 
 app = FastAPI()
 
-model = keras.models.load_model('/Users/zacharycassidy/Downloads/fruit_ripeness_model (2).h5')
+model = keras.models.load_model('fruit_ripeness_model (2).h5')
 
 def download_image_from_url(url: str) -> np.ndarray:
     try:
